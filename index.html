@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabor Makaresz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/9eca255ff0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+<!--                 <li><a href="#portfolio">Portfolio</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <img onclick="closemenu()" class="fas" width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/delete-sign--v1.png" alt="delete-sign--v1"/>
+            </ul>
+            <img onclick="openmenu()" class="fas" width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png" alt="menu--v1"/>
+        </nav>
+        <div class="header-text">
+            <p>Beginner Programmer</p>
+            <h1>Hi, I'm <span>Gabor</span> Makaresz <br> from Germany</h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hello and welcome to my portfolio! I've been interested in computers since I was very little and it's been my passion ever since to understand their inner workings. In this regard, I started learning how to code, and to showcase my current and future projects, I've made this website. Enjoy!  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Python, HTML/CSS/JavaScript, C++</li>
+                        <li><span>Blender</span><br>a few weeks of experience</li>
+                        <li><span>Misc</span><br>Microsoft suite, GIMP, Davinci Resolve, Canva</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Current</span><br>sadly not much thus far outside own projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Secondary School Leaving Certificate  at BBS FRiesoythe, Germany</li>
+                        <li><span>2018-2022</span><br>Extended Secondary School Certificate I at Laurentius-Siemer-Gymnasium in Ramsloh, Germany</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100//ffffff/code.png" alt="code"/>
+                <h2>Web Design</h2>
+                <p>Although I'm new to web design, I'm open to learning from others in this field or simply helping out to learning. If you're interested, contact me!</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/ffffff/100/crop.png" alt="crop"/>
+                <h2>Programmer</h2>
+                <p>I'm open to developing any apps that might interest you in any of my programming languages listed in my skills section</p>
+                <a href="#about">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-question fa-6x"></i>
+                <h2>Coming Soon</h2>
+                <p>Check back later.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<!--  <div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <span><img src="images/work-1.png" alt=""></span>
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download now from the play store.</p>
+                    <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/001eff/external-link.png" alt="external-link"/></a>
+                </div>
+            </div>
+            <div class="work">
+                <span><img src="images/work-2.png" alt=""></span>
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download now from the play store.</p>
+                    <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/001eff/external-link.png" alt="external-link"/></a>
+                </div>
+            </div>
+            <div class="work">
+                <span><img src="images/work-3.png" alt=""></span>
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download now from the play store.</p>
+                    <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/001eff/external-link.png" alt="external-link"/></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div> -->
+
+ <!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <span><p><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/001eff/new-post.png" alt="new-post"/>contact@itsgabor.com</p></span>
+                <p><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/001eff/phone.png" alt="phone"/>+49 170 4902886</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/g.mkrsz/profilecard/?igsh=MWs1bWRsZ2F2NzR1NA==" target="_blank"><img width="60" height="60" src="https://img.icons8.com/ios/100/001eff/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                    <a href="https://www.youtube.com/@GaborYT" target="_blank"><img width="60" height="60" src="https://img.icons8.com/ios/100/001eff/youtube-play--v1.png" alt="youtube-play--v1"/></a>
+                    <a href="https://x.com/_gaborm_" target="_blank"><img width="60" height="60" src="https://img.icons8.com/ios/100/001eff/twitter--v1.png" alt="twitter--v1"/></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gabor Makaresz</p>
+    </div>
+</div>
+
+    
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz-VN15EAehP96wZOiUz2_Yb6fT7GP_o6AyXeNCSxg1ZCFaMOwGQRUpF8aXJM4Apvwfug/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
