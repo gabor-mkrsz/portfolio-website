@@ -519,7 +519,11 @@ nav .fas{
     }
 
     .contact-left{
-        padding-left: 27%;
+        display: flexbox;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
     }
 
     .contact-left span p{
@@ -533,7 +537,14 @@ nav .fas{
         margin-top: 25px;
     }
     .social-icons{
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
     margin-top: 25px;
+    }
+
+    .social-icons a{
+        margin-right: 0;
     }
 
 }
