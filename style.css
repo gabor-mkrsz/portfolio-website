@@ -464,6 +464,7 @@ nav .fas{
     }
 
     #about{
+        padding-top: 5rem;
         padding-left: 2.75rem;
     }
 
@@ -480,6 +481,10 @@ nav .fas{
         margin-bottom: 30px;
     }
 
+    .about-col-2{
+        width: 100vw;
+    }
+    
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
