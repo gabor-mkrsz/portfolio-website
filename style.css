@@ -422,6 +422,10 @@ nav .fas{
         font-size: 30px;
     }
 
+    .nav{
+        width: 100vh;
+    }
+
     nav .fas{
     display: block;
     }
