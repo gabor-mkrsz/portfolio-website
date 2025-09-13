@@ -87,7 +87,7 @@ nav ul li a:hover::after{
 
  /* about */
  #about{
-    padding: 70px;
+
     padding-bottom: 0;
     color: #ababab;
     width: 100%;
@@ -459,6 +459,18 @@ nav .fas{
         font-size: 40px;
     }
 
+    .header-text h1{
+        width: 15rem;
+    }
+
+    #about{
+        padding-left: 2.75rem;
+    }
+
+    #about .subtitle{
+        font-size: 30px;
+    }
+
     .about-col-1, .about-col-2{
         flex-basis: 92.5%;
         align-items: center;
@@ -466,7 +478,6 @@ nav .fas{
 
     .about-col-1{
         margin-bottom: 30px;
-        padding-left: 85px;
     }
 
     .contact-left,.contact-right{
